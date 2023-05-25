@@ -1,0 +1,79 @@
+#product {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 10px 0 100px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+#product > img {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transition: .4s;
+    flex-shrink: 1;
+}
+
+.big-img {
+    width: 800px !important; /*u slucaju konflikta !important daje prednost*/
+    height: 800px !important;
+}
+
+#product-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--main-font);
+}
+
+#product-name {
+    font-size: 40px;
+}
+
+#product-price {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#product-info {
+    font-size: 20px;
+    width: 800px;
+}
+
+p {
+    margin: 0;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#row-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#quantity {
+    width: 80px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+button {
+    margin-left: 15px;
+    user-select: none;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color .1s;
+}
+
+button:hover {
+    background-color: rgb(204, 188, 188);
+}
